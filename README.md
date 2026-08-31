@@ -40,7 +40,7 @@ To run this project locally, all you need is a modern web browser (Google Chrome
 Installation & Execution
 Clone the repository to your local machine:
 
-Bash
+``bash
 git clone https://github.com/your-username/music-quiz-app.git
 
 🕹️ How to Play
