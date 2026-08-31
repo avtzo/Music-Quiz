@@ -33,7 +33,7 @@ Installation & Execution
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/music-quiz-app.git
+git clone https://github.com/avtzo/Music-Quiz.git
 ```
 ## 🕹️ How to Play
 Select a Music Genre from the start screen.
