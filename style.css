@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lexend', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url(assets/images/bg-main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    font-family: 'Lexend', sans-serif;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+.volume p {
+    color: white;
+}
+
+.volume input[type="range"] {
+    -webkit-appearance: none; 
+    appearance: none;
+    background: transparent; 
+}
+
+.volume input::-webkit-slider-runnable-track {
+    height: 5px;
+    width: 300px;
+    background: gray;
+    border-radius: 3px;
+}
+
+.volume input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    height: 15px;             
+    width: 15px;              
+    border-radius: 50%;
+    border: 3px solid white;       
+    background: gray;
+    margin-top: -5px;         
+    cursor: pointer;
+}
+
+.start-screen-layout {
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(1px) url(#lg-filter) blur(2px) saturate(1.5) brightness(1.1);
+    -webkit-backdrop-filter: blur(8px) saturate(1.8) brightness(1.15) contrast(1.05);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 1.5px 1.5px 0 rgba(255, 255, 255, 0.5),
+        inset 0 0 12px rgba(255, 255, 255, 0.2),
+        0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.start-screen h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.start-screen h2 {
+    color: white;
+}
+
+.start-screen h2 span {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+.genre-select {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.genre-select-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 15px;
+    padding: 3px;
+    transition: 0.05s;
+}
+
+.genre-select-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.genre-select-btn:active {
+    transform: scale(0.95);
+}
+
+.selected-genre {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 0px gold;
+}
+
+#start-quiz-btn {
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+#start-quiz-btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px gold;
+}
+
+#start-quiz-btn:active {
+    transform: scale(0.9);
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(1px) url(#lg-filter) blur(2px) saturate(1.5) brightness(1.1);
+    -webkit-backdrop-filter: blur(8px) saturate(1.8) brightness(1.15) contrast(1.05);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 1.5px 1.5px 0 rgba(255, 255, 255, 0.5),
+        inset 0 0 12px rgba(255, 255, 255, 0.2),
+        0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.question-container h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.question-container h2 {
+    color: white;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+#question-counter {
+    color: aquamarine;
+}
+
+.quiz-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+}
+
+.quiz-btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.1s;
+}
+
+.quiz-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.quiz-btn:active {
+    transform: scale(0.9);
+}
+
+#song-progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent; 
+    margin: 20px 0;
+}
+
+#song-progress-bar::-webkit-slider-runnable-track {
+    height: 5px;
+    width: 500px;
+    background: white;
+    border-radius: 3px;
+}
+
+#song-progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    height: 15px;             
+    width: 15px;              
+    border-radius: 50%;
+    background: aquamarine;
+    margin-top: -5px;   
+}
+
+#replay-btn {
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+#replay-btn:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8)
+}
+
+#replay-btn:active {
+    transform: scale(0.9);
+}
+
+.result-screen-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(1px) url(#lg-filter) blur(2px) saturate(1.5) brightness(1.1);
+    -webkit-backdrop-filter: blur(8px) saturate(1.8) brightness(1.15) contrast(1.05);
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 1.5px 1.5px 0 rgba(255, 255, 255, 0.5),
+        inset 0 0 12px rgba(255, 255, 255, 0.2),
+        0 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.result-screen-layout h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#go-to-menu-btn {
+    font-size: 1.3rem;
+    font-weight: 750;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+#go-to-menu-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#go-to-menu-btn:active {
+    transform: scale(0.9);
+}
+
+@media  screen and (max-width: 540px) {
+    body {
+        background: url(assets/images/bg-main-phone.jpg);
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .volume {
+        right: 5px;
+    }
+    .start-screen-layout {
+        width: 95vw;
+        min-width: 100px;
+    }
+    .start-screen h2 {
+        min-width: none;
+        font-size: 1.1rem;
+    }
+    .question-container {
+        width: 95vw;
+    }
+    .question-container h1 {
+        font-size: 1.8rem;
+    }
+    .result-screen-layout {
+        width: 95vw;
+    }
+    .result-screen-layout h1 {
+        font-size: 1.9rem;
+    }
+}
