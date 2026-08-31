@@ -1,7 +1,7 @@
-#🎵 Music Genre Quiz App
+# 🎵 Music Genre Quiz App
 A responsive, dynamic web-based Quiz application that tests users' knowledge across various music genres (House, RnB, AfroBeat). Built with modern vanilla JavaScript, HTML5, and CSS3, the application features screen flow transitions, custom audio controls, device-specific responsive backgrounds, and interactive quiz mechanics.
 
-##🚀 Features
+## 🚀 Features
 * Genre Selection: Choose between multiple music genres (House, RnB, AfroBeat) with active button states.
 
 * Responsive Backgrounds: Dynamic background updates customized for both Desktop and Mobile viewports using JS media query detection.
@@ -18,14 +18,14 @@ Dynamic Quiz Mechanics:
 
 * Clean Single-Page Flow: Seamless screen transitions between Start Menu, Active Quiz, and Final Results without page reloads.
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 **HTML5:** Semantic layout and structured quiz screens.
 
 **CSS3:** Custom UI styling, Flexbox/Grid layouts, custom range input styling (::-webkit-slider-thumb), and responsive breakpoints.
 
 **JavaScript (ES6+):** Dynamic DOM manipulation, array methods (.map(), .forEach()), event handling, and viewport detection (window.matchMedia).
 
-##💻 Getting Started
+## 💻 Getting Started
 Prerequisites
 To run this project locally, all you need is a modern web browser (Google Chrome, Mozilla Firefox, Safari, Microsoft Edge).
 
@@ -35,7 +35,7 @@ Installation & Execution
 ```bash
 git clone https://github.com/your-username/music-quiz-app.git
 ```
-##🕹️ How to Play
+## 🕹️ How to Play
 Select a Music Genre from the start screen.
 1. Click Start Quiz to begin.
 
