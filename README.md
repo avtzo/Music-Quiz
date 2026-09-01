@@ -8,7 +8,7 @@ A responsive, dynamic web-based Quiz application that tests users' knowledge acr
 
 * Customized Audio & Controls: Custom-styled volume slider inputs using WebKit pseudo-elements and tailored player controls.
 
-Dynamic Quiz Mechanics:
+### Dynamic Quiz Mechanics:
 
 * Randomized question pool for fresh gameplay on every run.
 
@@ -26,7 +26,7 @@ Dynamic Quiz Mechanics:
 **JavaScript (ES6+):** Dynamic DOM manipulation, array methods (.map(), .forEach()), event handling, and viewport detection (window.matchMedia).
 
 ## 💻 Getting Started
-Prerequisites
+### Prerequisites
 To run this project locally, all you need is a modern web browser (Google Chrome, Mozilla Firefox, Safari, Microsoft Edge).
 
 Installation & Execution
@@ -36,7 +36,7 @@ Installation & Execution
 git clone https://github.com/avtzo/Music-Quiz.git
 ```
 ## 🕹️ How to Play
-Select a Music Genre from the start screen.
+### Select a Music Genre from the start screen.
 1. Click Start Quiz to begin.
 
 2. Answer the multiple-choice questions displayed on the screen.
