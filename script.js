@@ -293,7 +293,7 @@ function displayQuestions(genre) {
             <button type="button" class="quiz-btn">${shuffledOptions[3]}</button>
         </div>
         <input type="range" id="song-progress-bar" min="0" max="10" value="0" disabled>
-        <button type="button" id="replay-btn">Replay</button>
+        <button type="button" id="replay-btn"><i class="fa-solid fa-repeat"></i></button>
     `;
 
   quizScreen.appendChild(displayContainer);
