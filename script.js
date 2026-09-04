@@ -8,8 +8,6 @@ const endScreen = document.querySelector(".result-screen");
 
 const genreDisplay = document.getElementById("genre-display");
 
-const genres = ["House", "RnB", "AfroBeat"];
-
 function isMobile() {
     return window.matchMedia("(max-width: 540px)").matches;
 }
@@ -203,13 +201,18 @@ const quizData = {
   ],
 };
 
+let indexNumber = 0;
+
 function displayGenres() {
-  let randomIndex = Math.floor(Math.random() * 3);
-  let display = (genreDisplay.textContent = genres[randomIndex]);
+  if (indexNumber === 3) {
+    indexNumber = 0;
+  }
+  let display = (genreDisplay.textContent = Object.keys(quizData)[indexNumber]);
+  indexNumber++;
   return display;
 }
 
-setInterval(displayGenres, 400);
+setInterval(displayGenres, 350);
 
 let selectedGenre = undefined;
 let currentQuestionIndex = 0;
