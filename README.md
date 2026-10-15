@@ -8,7 +8,7 @@ A responsive, dynamic web-based Quiz application that tests users' knowledge acr
 
 * Customized Audio & Controls: Custom-styled volume slider inputs using WebKit pseudo-elements and tailored player controls.
 
-### Dynamic Quiz Mechanics:
+### Quiz Mechanics:
 
 * Randomized question pool for fresh gameplay on every run.
 
